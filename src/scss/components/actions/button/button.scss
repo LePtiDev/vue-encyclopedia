@@ -1,0 +1,84 @@
+/*
+created by: Quentin Guerrier 
+created at: 29 october 2021
+*/
+
+//================================================================ Button Colors
+
+// Primary
+.button-primary--regular{
+    @include button-regular();
+    @include hover-primary($primary-button-hover-color);
+    background-color: rgba($primary-button-color, 1);
+    border: solid 1px $primary-button-border-color;
+    span{
+        color: $primary-button-text-color;
+    }
+    i{
+        color: $primary-button-text-color;
+    }
+}
+.button-primary--small{
+    @include button-small();
+    @include hover-primary($primary-button-hover-color);
+    background-color: rgba($primary-button-color, 1);
+    border: solid 1px $primary-button-border-color;
+    span{
+        color: $primary-button-text-color;
+    }
+    i{
+        color: $primary-button-text-color;
+    }
+}
+
+// Secondary
+.button-secondary--regular{
+    @include button-regular();
+    @include hover-secondary($secondary-button-hover-color);
+    background-color: rgba($secondary-button-color, 1);
+    border: solid 1px $secondary-button-border-color;
+    span{
+        color: $secondary-button-text-color;
+    }
+    i{
+        color: $secondary-button-text-color;
+    }
+}
+.button-secondary--small{
+    @include button-small();
+    @include hover-secondary($secondary-button-hover-color);
+    background-color: rgba($secondary-button-color, 1);
+    border: solid 1px $secondary-button-border-color;
+    span{
+        color: $secondary-button-text-color;
+    }
+    i{
+        color: $secondary-button-text-color;
+    }
+}
+
+// Tertiary
+.button-terciary--regular{
+    @include button-regular();
+    @include hover-secondary($tertiary-button-hover-color);
+    background-color: rgba($tertiary-button-color, 1);
+    border: solid 1px $tertiary-button-border-color;
+    span{
+        color: $tertiary-button-text-color;
+    }
+    i{
+        color: $tertiary-button-text-color;
+    }
+}
+.button-terciary--small{
+    @include button-small();
+    @include hover-secondary($tertiary-button-hover-color);
+    background-color: rgba($tertiary-button-color, 1);
+    border: solid 1px $tertiary-button-border-color;
+    span{
+        color: $tertiary-button-text-color;
+    }
+    i{
+        color: $tertiary-button-text-color;
+    }
+}

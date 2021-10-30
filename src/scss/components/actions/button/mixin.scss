@@ -1,0 +1,75 @@
+/*
+created by: Quentin Guerrier 
+created at: 29 october 2021
+*/
+
+//================================================================ Disabled
+@mixin button-disabled {
+    background-color: map-get($colors, gray--100) !important;
+    span, i{
+        color: map-get($colors, gray--400) !important;
+    }
+    &:hover{
+        background-color: map-get($colors, gray--100) !important;
+        span, i{
+            color: map-get($colors, gray--400) !important;
+        }
+    }
+}
+
+//================================================================ Hover
+@mixin hover-primary($color){
+    transition: 200ms;
+    cursor: pointer;
+    &:hover{
+        transition: 200ms;
+        background-color: $color
+    }
+}
+@mixin hover-secondary($color){
+    transition: 200ms;
+    cursor: pointer;
+    &:hover{
+        transition: 200ms;
+        background-color: $color
+    }
+}
+
+//================================================================ Button Size
+@mixin button-regular {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    border-radius: 4px;
+    span{
+        @include unselect();
+        @include text-sm---regular();
+    }
+    i{
+        @include unselect();
+        font-size: 15px !important;
+    }
+    &:disabled{
+        @include button-disabled()
+    }
+}
+
+@mixin button-small {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 8px;
+    border-radius: 4px;
+    span{
+        @include unselect();
+        @include text-sm---regular();
+    }
+    i{
+        @include unselect();
+        font-size: 15px !important;
+    }
+    &:disabled{
+        @include button-disabled()
+    }
+}
