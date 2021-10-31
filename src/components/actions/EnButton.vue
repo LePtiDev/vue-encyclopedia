@@ -1,5 +1,5 @@
 <template>
-    <button :class="small ? 'button-' + type + '--small' : 'button-'+ type +'--regular'" @click="click()">
+    <button :class="small ? 'button-' + type + '--small' : 'button-'+ type +'--regular'">
         <i v-if="iconsLeft" class="icon-left" :class="iconsLeft"></i>
         <span v-if="title">{{ title }}</span>
         <i v-if="iconsRight" class="icon-right" :class="iconsRight"></i>
@@ -17,11 +17,6 @@ export default {
         iconsRight: String,
         type: {
             default: "primary"
-        }
-    },
-    methods: {
-        click(){
-            this.$emit("click")
         }
     }
 }
