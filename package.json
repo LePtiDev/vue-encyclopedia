@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "sass": "^1.43.4",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
     "vue-unicons": "^3.2.1"
