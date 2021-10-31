@@ -6,4 +6,12 @@ created at: 29 october 2021
 // global
 @import './global/colors.scss';
 @import './global/font.scss';
-@import './global/reset.scss'
+@import './global/reset.scss';
+@import './config.scss';
+
+// mixin
+@import './mixins/global.scss';
+@import "./components/actions/button/mixin.scss";
+
+// components
+@import './components/actions/button/button.scss';

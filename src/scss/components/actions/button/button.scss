@@ -1,0 +1,123 @@
+/*
+created by: Quentin Guerrier 
+created at: 29 october 2021
+*/
+
+//================================================================ Button Text
+
+// Primary
+.button-primary--regular{
+    @include button-regular();
+    @include hover-primary($primary-button-hover-color);
+    @include icon($primary-button-icon-color);
+    background-color: rgba($primary-button-color, 1);
+    border: solid 1px $primary-button-border-color;
+    span{
+        color: $primary-button-text-color;
+        vertical-align: middle;
+    }
+}
+.button-primary--small{
+    @include button-small();
+    @include hover-primary($primary-button-hover-color);
+    @include icon($primary-button-icon-color);
+    background-color: rgba($primary-button-color, 1);
+    border: solid 1px $primary-button-border-color;
+    span{
+        color: $primary-button-text-color;
+    }
+}
+
+// Secondary
+.button-secondary--regular{
+    @include button-regular();
+    @include hover-secondary($secondary-button-hover-color);
+    @include icon($secondary-button-icon-color);
+    background-color: rgba($secondary-button-color, 1);
+    border: solid 1px $secondary-button-border-color;
+    span{
+        color: $secondary-button-text-color;
+    }
+}
+.button-secondary--small{
+    @include button-small();
+    @include hover-secondary($secondary-button-hover-color);
+    @include icon($secondary-button-icon-color);
+    background-color: rgba($secondary-button-color, 1);
+    border: solid 1px $secondary-button-border-color;
+    span{
+        color: $secondary-button-text-color;
+    }
+}
+
+// Tertiary
+.button-terciary--regular{
+    @include button-regular();
+    @include hover-secondary($tertiary-button-hover-color);
+    @include icon($tertiary-button-icon-color);
+    background-color: rgba($tertiary-button-color, 1);
+    border: solid 1px $tertiary-button-border-color;
+    span{
+        color: $tertiary-button-text-color;
+    }
+}
+.button-terciary--small{
+    @include button-small();
+    @include hover-secondary($tertiary-button-hover-color);
+    @include icon($tertiary-button-icon-color);
+    background-color: rgba($tertiary-button-color, 1);
+    border: solid 1px $tertiary-button-border-color;
+    span{
+        color: $tertiary-button-text-color;
+    }
+}
+
+//================================================================ Button Icon
+
+// Primary
+.button-primary-icon--regular{
+    @include button-icon-regular();
+    @include hover-primary($primary-button-hover-color);
+    @include icon($primary-button-icon-color);
+    background-color: rgba($primary-button-color, 1);
+    border: solid 1px $primary-button-border-color;
+}
+.button-primary-icon--small{
+    @include button-icon-small();
+    @include hover-primary($primary-button-hover-color);
+    @include icon($primary-button-icon-color);
+    background-color: rgba($primary-button-color, 1);
+    border: solid 1px $primary-button-border-color;
+}
+
+// Secondary
+.button-secondary-icon--regular{
+    @include button-icon-regular();
+    @include hover-secondary($secondary-button-hover-color);
+    @include icon($secondary-button-icon-color);
+    background-color: rgba($secondary-button-color, 1);
+    border: solid 1px $secondary-button-border-color;
+}
+.button-secondary-icon--small{
+    @include button-icon-small();
+    @include hover-secondary($secondary-button-hover-color);
+    @include icon($secondary-button-icon-color);
+    background-color: rgba($secondary-button-color, 1);
+    border: solid 1px $secondary-button-border-color;
+}
+
+// Tertiary
+.button-terciary-icon--regular{
+    @include button-icon-regular();
+    @include hover-secondary($tertiary-button-hover-color);
+    @include icon($tertiary-button-icon-color);
+    background-color: rgba($tertiary-button-color, 1);
+    border: solid 1px $tertiary-button-border-color;
+}
+.button-terciary-icon--small{
+    @include button-icon-small();
+    @include hover-secondary($tertiary-button-hover-color);
+    @include icon($tertiary-button-icon-color);
+    background-color: rgba($tertiary-button-color, 1);
+    border: solid 1px $tertiary-button-border-color;
+}

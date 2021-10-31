@@ -1,0 +1,11 @@
+/*
+created by: Quentin Guerrier 
+created at: 29 october 2021
+*/
+
+@mixin unselect{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;  
+}
