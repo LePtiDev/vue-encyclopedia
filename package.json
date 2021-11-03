@@ -1,14 +1,37 @@
 {
   "name": "vue-encyclopedia",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.8",
+  "private": false,
+  "main": "dist/vue-encyclopedia.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js",
+    "plugins/*"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "encyclopedia",
+    "vue",
+    "vue-encyclopedia"
+  ],
+  "author": {
+    "name": "Quentin Guerrier",
+    "email": "quentinguerrierpro@gmail.com"
+  },
+  "repository": "https://github.com/LePtiDev/vue-encyclopedia",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name vue-encyclopedia ./src/install.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "sass": "^1.43.4",
+    "sass-loader": "^10.1.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -18,6 +41,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.4.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

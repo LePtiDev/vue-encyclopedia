@@ -1,0 +1,134 @@
+/*
+created by: Quentin Guerrier 
+created at: 29 october 2021
+*/
+
+//================================================================ Disabled
+@mixin button-disabled {
+    background-color: map-get($colors, gray--100) !important;
+    span, i{
+        color: map-get($colors, gray--400) !important;
+    }
+    &:hover{
+        background-color: map-get($colors, gray--100) !important;
+        span, i{
+            color: map-get($colors, gray--400) !important;
+        }
+    }
+}
+
+//================================================================ Hover
+@mixin hover-primary($color){
+    transition: 200ms;
+    cursor: pointer;
+    &:hover{
+        transition: 200ms;
+        background-color: $color
+    }
+}
+@mixin hover-secondary($color){
+    transition: 200ms;
+    cursor: pointer;
+    &:hover{
+        transition: 200ms;
+        background-color: $color
+    }
+}
+
+@mixin icon($color) {
+    .icon-left{
+        color: $color;
+        margin-right: 8px;
+        font-size: 18px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-bottom: 2px;
+    }
+    .icon-right{
+        color: $color;
+        margin-left: 8px;
+        font-size: 18px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-bottom: 2px;
+    }
+    .icon{
+        color: $color;
+        font-size: 18px;
+        display: block;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+//================================================================ Button Size
+@mixin button-regular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    span{
+        @include unselect();
+        @include text-sm---regular();
+        display: block;
+    }
+    i{
+        @include unselect();
+    }
+    &:disabled{
+        @include button-disabled()
+    }
+}
+
+@mixin button-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    span{
+        @include unselect();
+        @include text-sm---regular();
+        display: block;
+    }
+    i{
+        @include unselect();
+    }
+    &:disabled{
+        @include button-disabled()
+    }
+}
+
+@mixin button-icon-regular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 4px;
+    i{
+        @include unselect();
+    }
+    &:disabled{
+        @include button-disabled()
+    }
+}
+
+@mixin button-icon-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    i{
+        @include unselect();
+    }
+    &:disabled{
+        @include button-disabled()
+    }
+}
+
