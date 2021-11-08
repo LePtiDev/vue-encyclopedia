@@ -1,0 +1,55 @@
+
+.nav-app{
+  position: absolute;
+  top: 15px;
+  left: 80px;
+  bottom: 15px;
+  min-width: 200px;
+  background: map-get($colors, white);
+  border-radius: 5px;
+  padding: 50px 15px 15px 15px;
+  .logo{
+    width: 100%;
+    height: 100px;
+    background-color: map-get($colors, cool-gray--100);
+    border: dashed 1px map-get($colors, cool-gray--300);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: map-get($colors , cool-gray--400);
+    margin-bottom: 50px;
+  }
+
+  h4{
+    margin: 20px 0 10px 0;
+    color: map-get($colors , blue-gray--500);
+    text-transform: uppercase;
+    @include text-xs---medium;
+  }
+
+  .list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    .link{
+      padding: 0;
+      padding: 4px 10px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      @include text-sm---regular;
+      color: map-get($colors , blue-gray--600);
+      &:hover{
+        background-color: map-get($colors , blue-gray--50);
+      }
+    }
+    .selected{
+      background-color: map-get($colors , blue-gray--100);
+      &:hover{
+        background-color: map-get($colors , blue-gray--100);
+      }
+    }
+  }
+}
