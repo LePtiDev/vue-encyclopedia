@@ -1,11 +1,11 @@
 module.exports = {
-    css: {
-      loaderOptions: {
-        scss: {
-            additionalData: `
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `
             @import "@/scss/init.scss";
-            `
-        }
-      }
-    }
-  };
+            `,
+      },
+    },
+  },
+};
