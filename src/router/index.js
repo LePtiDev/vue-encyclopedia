@@ -1,28 +1,28 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-import ButtonView from '@/views/ButtonView.vue'
-import ChipsView from '@/views/ChipsView.vue'
+import ButtonView from "@/views/ButtonView.vue";
+import ChipsView from "@/views/ChipsView.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/button',
-    name: 'button',
+    path: "/button",
+    name: "button",
     component: ButtonView,
   },
   {
-    path: '/chips',
-    name: 'chips',
+    path: "/chips",
+    name: "chips",
     component: ChipsView,
-  }
-]
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
