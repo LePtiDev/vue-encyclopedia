@@ -29,7 +29,9 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
+            continue_on_error: false
           prettier: true
+            continue_on_error: false
 
       - name: "Build app"
         run: npm run build
