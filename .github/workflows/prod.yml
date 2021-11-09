@@ -1,4 +1,4 @@
-name: preprod
+name: prod
 
 on: 
   push: 
