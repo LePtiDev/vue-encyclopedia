@@ -3,7 +3,7 @@ name: preprod
 on: 
   push: 
     branches: 
-      - dev
+      - master
 
 jobs: 
   deploy: 
@@ -29,10 +29,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
-          
+
       - name: "Install dpl"
         run: gem install dpl
       
       - name: "Deploy preprod"
-        run: dpl --provider=heroku --app=${{secrets.HEROKU_APP}} --api-key=${{secrets.HEROKU_API_KEY}} --skip_cleanup=true
+        run: dpl --provider=heroku --app=${{secrets.PROD_HEROKU_APP}} --api-key=${{secrets.HEROKU_API_KEY}} --skip_cleanup=true
 
