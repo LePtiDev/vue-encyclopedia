@@ -24,9 +24,6 @@ jobs:
 
       - name: "Run ESLint"
         uses: stefanoeb/eslint-action@1.0.2
-      
-      - name: "Prettify code"
-        uses: creyD/prettier_action@v4.0
 
       - name: "Build app"
         run: npm run build
