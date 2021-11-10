@@ -22,12 +22,12 @@ jobs:
       - name: "Check audit"
         uses: oke-py/npm-audit-action@v1.8.2
         with:
-          audit_level: moderate
+          audit_level: low
           github_token: ${{ secrets.GITHUB_TOKEN }}
           issue_assignees: oke-py
           issue_labels: vulnerability,test
           dedupe_issues: true
-          
+
       - name: "Run ESLint"
         uses: stefanoeb/eslint-action@1.0.2
 
