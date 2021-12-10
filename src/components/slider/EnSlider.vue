@@ -1,5 +1,5 @@
 <template>
-  <div class="slider">
+  <div :class="'slider-' + type">
     <p>{{ this.title }}</p>
     <input type="range" :step="this.step" />
     <p>{{ this.value }}</p>
