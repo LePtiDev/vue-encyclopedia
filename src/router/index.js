@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 
 import ButtonView from "@/views/ButtonView.vue";
 import ChipsView from "@/views/ChipsView.vue";
+import SliderView from "@/views/SliderView.vue";
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
     path: "/chips",
     name: "chips",
     component: ChipsView,
+  },
+  {
+    path: "/slider",
+    name: "slider",
+    component: SliderView,
   },
 ];
 

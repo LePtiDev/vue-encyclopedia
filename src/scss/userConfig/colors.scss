@@ -21,3 +21,9 @@ $tertiary-button-hover-color: map-get($colors, $primary-color + "--50");
 $tertiary-button-border-color: transparent;
 $tertiary-button-text-color: map-get($colors, $primary-color + "--600");
 $tertiary-button-icon-color: map-get($colors, $primary-color + "--600");
+
+$primary-slider-background-color: map-get($colors, "gray--200");
+$primary-slider-hover-container-color: map-get($colors, "gray--50");
+$primary-slider-text-color: map-get($colors, "cool-gray--500");
+
+$secondary-slider-background-color: map-get($colors, "cool-gray--800");

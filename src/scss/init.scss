@@ -4,17 +4,18 @@ created at: 29 october 2021
 */
 
 // global
-@import './global/colors.scss';
-@import './global/font.scss';
-@import './global/reset.scss';
+@import "./global/colors.scss";
+@import "./global/font.scss";
+@import "./global/reset.scss";
 
 // User config
-@import './userConfig/global.scss';
-@import './userConfig/colors.scss';
+@import "./userConfig/global.scss";
+@import "./userConfig/colors.scss";
 
 // mixin
-@import './mixins/global.scss';
+@import "./mixins/global.scss";
 @import "./components/button/mixin.scss";
 
 // components
-@import './components/button/button.scss';
+@import "./components/button/button.scss";
+@import "./components/slider/slider.scss";
