@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import EnButton from "@/components/actions/EnButton.vue";
+import EnButton from "@/components/button/EnButton.vue";
 
 export default {
   name: "button-view",
