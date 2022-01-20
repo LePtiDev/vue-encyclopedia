@@ -8,7 +8,7 @@
 </template>
 <script lang="ts">
 export default {
-  name: "en-button",
+  name: "EnButton",
   props: {
     title: String,
     small: Boolean,

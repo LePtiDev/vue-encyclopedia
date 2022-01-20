@@ -9,7 +9,7 @@
 </template>
 <script lang="ts">
 export default {
-  name: "en-card",
+  name: "EnCard",
   props: {
     title: String,
     icon: String,
