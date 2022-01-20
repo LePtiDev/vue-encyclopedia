@@ -1,0 +1,27 @@
+/*
+created by: Antoine Puech
+created at: 9 december 2021
+*/
+
+//================================================================ Tab
+
+// Primary
+.nav {
+  display: flex;
+}
+
+.tab-primary--regular{
+  @include tab-regular();
+  @include hover-primary($primary-tab-hover-color);
+  @include icon($primary-tab-icon-color);
+  background-color: rgba($primary-tab-color, 1);
+  border: solid 1px $primary-tab-border-color;
+  span{
+      color: $primary-tab-text-color;
+      vertical-align: middle;
+  }
+}
+
+#active {
+  @include active($active-tab-color)
+}
