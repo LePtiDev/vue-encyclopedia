@@ -57,7 +57,6 @@ export default {
   },
   methods: {
     setSelected(tab) {
-      console.log(tab)
       this.selected = tab.title;
     }
   }

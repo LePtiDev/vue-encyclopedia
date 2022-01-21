@@ -32,15 +32,12 @@ export default {
   },
   methods: {
     setTab(tab) {
-      console.log('click fdp')
       this.$emit("selected", tab);
     },
     isActiveIcon(title, type) {
-      console.log('icon', title);
       if (title === this.selected) return `active-icon-${type}`;
     },
     isActiveButton(title, type) {
-      console.log('button', title, this.selected);
       if (title === this.selected) return `active-button-${type}`
     }
   },
