@@ -1,0 +1,49 @@
+/*
+created by: Antoine Puech
+created at: 9 december 2021
+*/
+
+//================================================================ Tab
+
+// Primary
+.nav {
+  display: flex;
+}
+
+.tab-primary--filled{
+  @include tab-regular();
+  @include hover-primary($primary-tab-hover-color);
+  @include icon($primary-tab-icon-color);
+  background-color: rgba($primary-tab-color, 1);
+  border: solid 1px $primary-tab-border-color;
+  span{
+      color: $primary-tab-text-color;
+      vertical-align: middle;
+  }
+}
+
+.tab-primary--underline {
+  @include tab-underline();
+  @include icon($primary-tab-icon-color);
+  @include hover-underline($primary-tab-hover-color);
+  background-color: rgba($primary-tab-color, 1);
+  border: none
+}
+
+#active-button-filled {
+  @include active-button-filled($active-tab-color);
+  @include active-icon-filled($active-tab-color)
+}
+
+#active-button-underline {
+  @include active-button-underline($active-tab-color);
+  @include active-icon-underline($active-tab-color);
+  background-color: white !important;
+}
+#active-icon-filled {
+  @include active-icon-filled($active-tab-color);
+}
+
+#active-icon-underline {
+  @include active-icon-underline($active-tab-color);
+}

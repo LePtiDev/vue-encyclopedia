@@ -15,7 +15,9 @@ created at: 29 october 2021
 // mixin
 @import './mixins/global.scss';
 @import "./components/button/mixin.scss";
+@import "./components/tab/mixin.scss";
 
 // components
 @import './components/button/button.scss';
+@import './components/tab/tab.scss';
 @import './components/card/card.scss';
