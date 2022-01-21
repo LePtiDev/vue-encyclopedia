@@ -8,16 +8,16 @@
 </template>
 <script lang="ts">
 export default {
-  name: "EnButton",
-  props: {
-    title: String,
-    small: Boolean,
-    icon: String,
-    iconsLeft: String,
-    iconsRight: String,
-    type: {
-      default: "primary",
-    },
-  },
-};
+    name: "en-button",
+    props: {
+        title: String,
+        small: Boolean,
+        icon: String,
+        iconsLeft: String,
+        iconsRight: String,
+        type: {
+            default: "primary"
+        }
+    }
+}
 </script>
