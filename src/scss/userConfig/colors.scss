@@ -21,3 +21,11 @@ $tertiary-button-hover-color: map-get($colors, $primary-color + "--50");
 $tertiary-button-border-color: transparent;
 $tertiary-button-text-color: map-get($colors, $primary-color + "--600");
 $tertiary-button-icon-color: map-get($colors, $primary-color + "--600");
+
+$primary-tab-text-color: map-get($colors, black);
+$primary-tab-icon-color: map-get($colors, black);
+$primary-tab-border-color: transparent;
+$primary-tab-color: map-get($colors, $primary-color + "--00");
+$primary-tab-hover-color: map-get($colors, $primary-color + "--50");
+$active-tab-color: map-get($colors, $active-color + "--100");
+$active-icon-color: map-get($colors, $primary-color + "--600")

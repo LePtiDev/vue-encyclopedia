@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 
 import ButtonView from "@/views/ButtonView.vue";
 import ChipsView from "@/views/ChipsView.vue";
+import TabView from "@/views/TabView.vue";
+import CardView from "@/views/CardView.vue";
 
 Vue.use(VueRouter);
 
@@ -16,6 +18,16 @@ const routes = [
     path: "/chips",
     name: "chips",
     component: ChipsView,
+  },
+  {
+    path: "/tabs",
+    name: "tabs",
+    component: TabView,
+  },
+  {
+    path: "/card",
+    name: "card",
+    component: CardView,
   },
 ];
 
