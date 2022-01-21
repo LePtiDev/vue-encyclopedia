@@ -5,6 +5,7 @@
     <div class="list">
       <router-link :class="$route.name === 'button' ? 'selected' : ''" class="link" to="/button">Buttons</router-link>
       <router-link :class="$route.name === 'chips' ? 'selected' : ''" class="link" to="/chips">Chips</router-link>
+      <router-link :class="$route.name === 'card' ? 'selected' : ''" class="link" to="/card">Card</router-link>
     </div>
   </div>
 </template>
