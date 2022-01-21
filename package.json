@@ -24,6 +24,7 @@
     "plugins/*"
   ],
   "dependencies": {
+    "@vue/compiler-sfc": "^3.2.28",
     "core-js": "^3.6.5",
     "sass": "^1.43.4",
     "sass-loader": "^10.1.1",

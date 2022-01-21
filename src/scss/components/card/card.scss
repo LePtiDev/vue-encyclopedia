@@ -9,9 +9,10 @@
 .card-header{
     display:flex;
     justify-content:space-between;
+    margin-bottom: 20px;
 }
 .card-title{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size:20px;
     color:map-get($colors ,cool-gray--700)
 }
