@@ -9,6 +9,9 @@ created at: 9 december 2021
 .nav {
   display: flex;
 }
+.container-body {
+  display: block !important;
+}
 
 .tab-primary--filled{
   @include tab-regular();
