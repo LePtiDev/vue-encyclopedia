@@ -28,3 +28,4 @@ $primary-tab-border-color: transparent;
 $primary-tab-color: map-get($colors, $primary-color + "--00");
 $primary-tab-hover-color: map-get($colors, $primary-color + "--50");
 $active-tab-color: map-get($colors, $active-color + "--100");
+$active-icon-color: map-get($colors, $primary-color + "--600")

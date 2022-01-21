@@ -10,7 +10,7 @@ created at: 9 december 2021
   display: flex;
 }
 
-.tab-primary--regular{
+.tab-primary--filled{
   @include tab-regular();
   @include hover-primary($primary-tab-hover-color);
   @include icon($primary-tab-icon-color);
@@ -22,6 +22,28 @@ created at: 9 december 2021
   }
 }
 
-#active {
-  @include active($active-tab-color)
+.tab-primary--underline {
+  @include tab-underline();
+  @include icon($primary-tab-icon-color);
+  @include hover-underline($primary-tab-hover-color);
+  background-color: rgba($primary-tab-color, 1);
+  border: none
+}
+
+#active-button-filled {
+  @include active-button-filled($active-tab-color);
+  @include active-icon-filled($active-tab-color)
+}
+
+#active-button-underline {
+  @include active-button-underline($active-tab-color);
+  @include active-icon-underline($active-tab-color);
+  background-color: white !important;
+}
+#active-icon-filled {
+  @include active-icon-filled($active-tab-color);
+}
+
+#active-icon-underline {
+  @include active-icon-underline($active-tab-color);
 }
