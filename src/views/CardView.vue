@@ -10,7 +10,7 @@
           </template>
         </en-card>
 
-        <en-card class="margin-element" title="Card Title">
+        <en-card class="margin-element" title="Card Title" button="Cliquez">
           <template v-slot>
             <div class="card-placeholder"></div>
           </template>
