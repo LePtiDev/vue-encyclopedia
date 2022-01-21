@@ -1,0 +1,23 @@
+/*
+created by: Quentin Guerrier 
+created at: 29 october 2021
+*/
+
+//================================================================ Button
+$primary-button-color: map-get($colors, $primary-color + "--600");
+$primary-button-hover-color: map-get($colors, $primary-color + "--400");
+$primary-button-border-color: transparent;
+$primary-button-text-color: map-get($colors, white);
+$primary-button-icon-color: map-get($colors, white);
+
+$secondary-button-color: map-get($colors, $secondary-color + "--00");
+$secondary-button-hover-color: map-get($colors, $secondary-color + "--50");
+$secondary-button-border-color: map-get($colors, $secondary-color + "--200");
+$secondary-button-text-color: map-get($colors, $secondary-color + "--700");
+$secondary-button-icon-color: map-get($colors, $secondary-color + "--400");
+
+$tertiary-button-color: map-get($colors, $terciary-color + "--00");
+$tertiary-button-hover-color: map-get($colors, $primary-color + "--50");
+$tertiary-button-border-color: transparent;
+$tertiary-button-text-color: map-get($colors, $primary-color + "--600");
+$tertiary-button-icon-color: map-get($colors, $primary-color + "--600");

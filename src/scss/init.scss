@@ -7,11 +7,14 @@ created at: 29 october 2021
 @import './global/colors.scss';
 @import './global/font.scss';
 @import './global/reset.scss';
-@import './config.scss';
+
+// User config
+@import './userConfig/global.scss';
+@import './userConfig/colors.scss';
 
 // mixin
 @import './mixins/global.scss';
-@import "./components/actions/button/mixin.scss";
+@import "./components/button/mixin.scss";
 
 // components
-@import './components/actions/button/button.scss';
+@import './components/button/button.scss';
